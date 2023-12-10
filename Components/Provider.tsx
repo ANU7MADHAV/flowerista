@@ -1,8 +1,14 @@
-import { ClerkProvider } from "@clerk/nextjs";
-import { PropsWithChildren } from "react";
+"use client";
 
-const Provider = ({ children }: PropsWithChildren) => {
-  return <ClerkProvider>{children}</ClerkProvider>;
-};
+import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-export default Provider;
+export function Providers({ children }: { children: React.ReactNode }) {
+  return (
+    <NextUIProvider>
+      <NextThemesProvider attribute="class" defaultTheme="dark">
+        {children}
+      </NextThemesProvider>
+    </NextUIProvider>
+  );
+}

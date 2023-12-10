@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
   const links = [
@@ -17,6 +18,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <ThemeSwitcher />
         <UserButton />
       </nav>
     </div>
