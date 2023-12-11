@@ -1,9 +1,8 @@
-import { UserButton } from "@clerk/nextjs";
+import logo1 from "@/public/Logo.png";
+import logo from "@/public/logo1.png";
+import Image from "next/image";
 import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
-import logo from "@/public/logo1.png";
-import logo1 from "@/public/Logo.png";
-import Image from "next/image";
 
 const Navbar = () => {
   const firstLinks = [
@@ -47,7 +46,6 @@ const Navbar = () => {
           ))}
         </ul>
         <ThemeSwitcher />
-        <UserButton />
       </nav>
     </div>
   );

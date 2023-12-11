@@ -1,8 +1,18 @@
-import AnimatedComponent from "@/Components/AnimatedComponent";
+import LogoSection from "./(dashboard)/_components/LogoSection";
+import FindOut from "./(dashboard)/_components/FindOut";
+import CardSection from "./(dashboard)/_components/CardSection";
 export default function Home() {
   return (
     <div>
-      <AnimatedComponent />
+      <div>
+        <LogoSection />
+      </div>
+      <div>
+        <FindOut />
+      </div>
+      <div>
+        <CardSection />
+      </div>
     </div>
   );
 }
