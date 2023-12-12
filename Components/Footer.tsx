@@ -10,20 +10,20 @@ import { TfiYoutube } from "react-icons/tfi";
 
 const Footer = () => {
   return (
-    <div className="border-t-2">
+    <div className="mb h-auto w-screen border-t-2 pt-8">
       <div className="flex items-center justify-between px-8">
         <div className="scale-50">
           <Image alt="logo" src={logo} className="hidden dark:block" />
           <Image alt="logo" src={logo1} className="dark:hidden" />
         </div>
-        <div className="flex cursor-pointer space-x-8 ">
+        <div className="flex cursor-pointer space-x-8 text-sm md:text-lg">
           <h2 className="hover:border-b-2">ABOUT US</h2>
           <h2 className="hover:border-b-2">EMPLOYMENT</h2>
           <h2 className="hover:border-b-2">PRIVACY POLICY </h2>
           <h2 className="hover:border-b-2">CONTACT</h2>
         </div>
       </div>
-      <div className="flex items-center justify-between bg-gray-600/75 px-8 ">
+      <div className=" mt-2 flex items-center justify-between bg-gray-600/75 px-8 py-2">
         <div className="flex">
           <CiFacebook />
           <FaInstagram />
@@ -32,7 +32,7 @@ const Footer = () => {
           <PiSpotifyLogo />
           <TfiYoutube />
         </div>
-        <p>
+        <p className="pl-2 text-xs">
           Copyright © 2023 Infinity Hospitality. Website design & management by
           Regard.
         </p>

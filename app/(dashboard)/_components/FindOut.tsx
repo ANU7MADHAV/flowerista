@@ -1,6 +1,6 @@
 const FindOut = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-4 text-center">
+    <div className="flex flex-col items-center justify-center border-t-1 px-4 text-center">
       <p className=" py-4 text-lg font-normal text-black/90">
         UNPARALLELED, STRESS-FREE
       </p>

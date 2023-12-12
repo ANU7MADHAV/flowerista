@@ -5,7 +5,7 @@ import chair from "@/public/chair.png";
 
 const CardSection = () => {
   return (
-    <div className="flex px-8">
+    <div className="flex flex-col px-8 md:flex-row">
       <div className="flex  flex-col items-center justify-center px-4 py-4 text-center">
         <h1 className="py-4">WEDDINGS</h1>
         <div className="h-[300px] w-[300px]">
